@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./weatherhome.css">
+    <style>
+        *{
+              box-sizing: border-box;
+              padding: 0%;
+              margin: 0%;
+         }
+        #nav{
+            margin: 0 auto;
+            background-image: url("https://cdn.pixabay.com/photo/2014/03/16/12/51/sunset-288531_960_720.jpg");
+            text-decoration: none;
+            height: 600px;
+             background-repeat: no-repeat;
+             background-size: cover;
+        }
+        nav{
+          margin-left: 50%;
+           height: 100px; 
+           width: 500px; 
+        }
+        a{
+            text-decoration:none;
+            text-decoration-color: white;
+            font-size: 35px;
+            font-weight: 1000;
+            font-style: normal;
+        }
+        body {
+    color: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #CFD8DC;
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-image: url("https://images.pexels.com/photos/268917/pexels-photo-268917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+   .card1 {
+    background-image: url("https://media.istockphoto.com/id/908024258/photo/panorama-of-blue-sky-and-clouds-over-the-mountain-in-summer.jpg?s=612x612&w=0&k=20&c=Mxj0pEo8lveWGCxuqt1v2EM8S55AMacIGGs-XiqGPf4=");
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card2{
+    background-image: url("https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#mid{
+    display: flex;
+    justify-content: space-between;
+}
+.time-font {
+    font-size: 50px;
+}
+
+.sm-font {
+    font-size: 18px;
+}
+
+.med-font {
+    font-size: 28px;
+}
+
+.large-font {
+    font-size: 60px;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 700px;
+  margin-top: 1px;
+}
+#mumbai{
+    margin-top:350px ;
+    margin-left: 100px;
+    font-size: 30px;
+}
+#mum{
+    margin-top:4px ;
+    margin-left: 100px;
+    font-size: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        
+        
+        <!-- <img src="https://cdn.pixabay.com/photo/2014/03/16/12/51/sunset-288531_960_720.jpg" alt=""> -->
+        <div id="nav">
+            <nav>
+            <a href="http://127.0.0.1:5500/weatherhomepage.html">Home</a>
+            <a href="https://www.timeanddate.com/weather/india">Cities</a>
+            <a href="https://weather.com/en-IN/india/news">News</a>
+            </nav>
+            <div id="mumbai">
+                <h1>28&#176;
+                Mumbai</h1>
+            </div><div id="mum">
+               <h1>Thunder 
+                08:30 AM</h1>
+                        <p class="ml-4 mb-4">Wednesday, 22 march 2013</p>
+                    </div>
+            <div class="city_weather">
+                <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                    <div class="row d-flex justify-content-center px-3">
+                        <div class="">
+                            <form >
+                                <div class="bg-text">
+                                <h1>weather details</h1><br><br>
+                                <tr>
+                                    <td>Cloudy</td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <td>10%</td>
+                                </tr>
+                                <br>
+                                <tr>
+                                    <td>Humidity</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <td>62%</td>
+                                </tr>
+                                <br>
+                                <tr>
+                                    <td>Wind</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <td>8cm/hr</td>
+                                </tr>
+                            </form>
+                        </div>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+     </header>
+             <h1 style="margin-left: 50%;">Cities</h1>
+     <section id="mid">
+         <div class="city_weather">
+            <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="card">
+                        <h2 class="ml-auto mr-4 mt-3 mb-0">Delhi</h2>
+                        <p class="ml-auto mr-4 mb-0 med-font">Thunder</p>
+                        <h1 class="ml-auto mr-4 large-font">24&#176;</h1>
+                        <p class="time-font mb-0 ml-4 mt-auto">08:30 <span class="sm-font">AM</span></p>
+                        <p class="ml-4 mb-4">Wednesday, 22 march 2013</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="card1">
+                        <h2 class="ml-auto mr-4 mt-3 mb-0">Chennai</h2>
+                        <p class="ml-auto mr-4 mb-0 med-font">cloudy</p>
+                        <h1 class="ml-auto mr-4 large-font">29&#176;</h1>
+                        <p class="time-font mb-0 ml-4 mt-auto">08:30 <span class="sm-font">AM</span></p>
+                        <p class="ml-4 mb-4">Wednesday, 22 march 2013</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="card2">
+                        <h2 class="ml-auto mr-4 mt-3 mb-0">Jaipur</h2>
+                        <p class="ml-auto mr-4 mb-0 med-font">Sunny</p>
+                        <h1 class="ml-auto mr-4 large-font">40&#176;</h1>
+                        <p class="time-font mb-0 ml-4 mt-auto">08:30 <span class="sm-font">AM</span></p>
+                        <p class="ml-4 mb-4">Wednesday, 22 march 2013</p>
+                    </div>
+                </div>
+            </div>
+
+     </section>
+
+     <div class="search">
+        <form action="">
+            <input style="margin-left: 50%; height: 50px; width:300px" type="text"type="text"placeholder=" Search...." name="search">
+            <button>
+                <i class="fa fa-search"style="font-size:18px ;">
+                </i>
+            </button>
+        </form>
+    </div>
+
+
+    <footer id="footer">
+         <video src="./Pexels Videos 3931.mp4"></video>
+    </footer>
+</body>
+</html>
